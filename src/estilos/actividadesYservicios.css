@@ -1,0 +1,133 @@
+.seccion3 {
+    background-color: #9eab88;
+    padding: 40px 20px;
+}
+
+.seccion3 h2 {
+    color: #07272d;
+    font-family: 'Dancing Script';
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.tarjetas-expandibles {
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.tarjeta-expandible {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: flex 0.3s ease;
+    border-radius: 20px;
+}
+
+.tarjeta-expandible img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjeta-expandible:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.caja-texto {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fffffe;
+    text-align: center;
+    z-index: 4;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.caja-texto h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.caja-texto p {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 1;
+    visibility: visible;
+}
+
+.tarjeta-expandible.active {
+    flex: 5;
+}
+
+.tarjeta-expandible.active .caja-texto {
+    opacity: 1;
+}
+
+.tarjeta-expandible.active .caja-texto p {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    .tarjetas-expandibles {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .tarjeta-expandible {
+        flex: none;
+        width: 100%;
+        height: 100px;
+    }
+
+    .caja-texto {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .caja-texto h3 {
+        font-size: 20px;
+    }
+
+    .caja-texto p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:500px) {
+    .tarjeta-expandible {
+        flex: none;
+        width: 100%;
+        height: 100px;
+    }
+
+    .caja-texto {
+        position: absolute;
+        top: 60%;
+    }
+}

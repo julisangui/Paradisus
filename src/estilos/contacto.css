@@ -1,0 +1,120 @@
+.redesYformulario {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    margin-top: 40px;
+}
+
+.formulario-contacto input {
+    font-size: 12px;
+    border: none;
+    border-bottom: 1px solid darkgray;
+    padding: 10px;
+    outline: none;
+}
+
+.formulario-contacto input:focus {
+    background: none;
+}
+
+.formulario-contacto textarea {
+    font-size: 12px;
+    height: 200px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid darkgray;
+    outline: none;
+}
+
+.contacto-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-contacto {
+    height: 100px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.redes a {
+    font-family: 'Old Standart TT';
+    font-size: 20px;
+    color: #000001;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.redes a:hover {
+    color: #9eab88;
+}
+
+.footer hr {
+    margin: 0 auto;
+    border-top: 1px solid darkgray;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.copyright p {
+    font-family: 'Inter';
+    font-size: 12px;
+}
+
+.politicas {
+    display: flex;
+    gap: 20px;
+}
+
+.politicas a {
+    font-family: 'Inter';
+    font-size: 12px;
+    color: #000001;
+    text-decoration: none;
+}
+
+.politicas a:hover {
+    text-decoration: underline;
+}
+
+.formulario-contacto button {
+    color: #000001;
+    background: none;
+    height: 50px;
+    width: 150px;
+    border: 1px solid #000001;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.formulario-contacto button:hover {
+    background: #07272d;
+    color: #fffffe;
+}

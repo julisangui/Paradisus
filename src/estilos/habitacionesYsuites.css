@@ -1,0 +1,90 @@
+.seccion1 {
+    background-color: rgb(7, 39, 45);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.seccion1 h2 {
+    color: #9eab88;
+    font-family: 'Dancing Script';
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.seccion1 h3 {
+    font-family: 'Old Standard TT';
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.presentacion-seccion {
+    color: #fffffe;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    margin: 0 auto 30px auto;
+    width: 60%;
+    text-align: center;
+}
+
+.tarjeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 20px;
+}
+
+.tarjeta2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fffffe;
+    font-family: 'Inter';
+    font-size: 12px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.descripcion p {
+    width: 100%;
+    font-size: 12px;
+}
+
+.seccion1 img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.seccion1 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid #9eab88;
+    border-radius: 25px;
+    padding: 12px 20px;
+    background-color: transparent;
+    color: #9eab88;
+    font-size: 12px;
+    width: auto;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.seccion1 button:hover {
+    background-color: #9eab88;
+    color: #07272d;
+    transform: scale(1.1);
+}
