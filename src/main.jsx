@@ -7,7 +7,7 @@ import './estilos/resort.css';
 import './estilos/habitacionesYsuites.css';
 import './estilos/actividadesYservicios.css';
 import './estilos/contacto.css';
-import Hero from './components/Hero.jsx';
+import Hero from './components/hero.jsx';
 import Resort from './components/resort.jsx';
 import Habitaciones from './components/habitacionesYsuites.jsx';
 import Servicios from './components/actividadesYservicios.jsx';
