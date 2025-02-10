@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import videoFondo from '../assets/video-fondo.mp4';
 import Logo from '../assets/Logo.png';
 
-const hero = () => {
+const header = () => {
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [menuVisible, setMenuVisible] = useState(false);
@@ -27,14 +26,8 @@ const hero = () => {
         <a href="#actividadesYservicios" className="menu" onClick={handleLinkClick}>Actividades & Servicios</a>
         <a href="#contacto" className="menu" onClick={handleLinkClick}>Contacto</a>
       </nav>
-
-      <div className="hero-container">
-        <video src={videoFondo} autoPlay loop muted playsInline type='video/mp4' className="hero-video"/>
-        <h1 className="hero-title">Paradisus</h1>
-        <p className='subtitulo'>Un santuario de paz entre el mar y la selva</p>
-      </div>
     </>
   );
 };
 
-export default hero;
+export default header;
