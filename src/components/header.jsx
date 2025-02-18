@@ -1,33 +1,53 @@
-import { useState } from 'react';
-import Logo from '../assets/Logo.png';
+import { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import Logo from "../assets/Logo.png";
 
-const header = () => {
-
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+const Header = () => {
   const [menuVisible, setMenuVisible] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (section) => {
     setMenuVisible(false);
+
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        scrollToSection(section);
+      }, 100);
+    }
+    else {
+      scrollToSection(section);
+    }
+  };
+
+  const scrollToSection = (section) => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
     <>
-      <button id="abrir" className="abrir-menu" onClick={toggleMenu}><i className="bi bi-list"></i></button>
+      <button id="abrir" className="abrir-menu" onClick={toggleMenu}>
+        <i className="bi bi-list"></i>
+      </button>
 
       <nav className={`barra-navegacion ${menuVisible ? "visible" : ""}`} id="nav">
         <button className="cerrar-menu" id="cerrar" onClick={toggleMenu}><i className="bi bi-x"></i></button>
-        <a href="#resort" className="menu" onClick={handleLinkClick}>El resort</a>
-        <a href="#habitacionesYsuites" className="menu" onClick={handleLinkClick}>Habitaciones & Villas</a>
-        <img className='logo' src={Logo}></img>
-        <a href="#actividadesYservicios" className="menu" onClick={handleLinkClick}>Actividades & Servicios</a>
-        <a href="#contacto" className="menu" onClick={handleLinkClick}>Contacto</a>
+        <a className="menu" onClick={() => handleLinkClick("resort")}>El resort</a>
+        <a className="menu" onClick={() => handleLinkClick("habitacionesYvillas")}>Habitaciones & Villas</a>
+        <a onClick={() => handleLinkClick("Hero")} className="logo-container"><img className="logo" src={Logo} alt="Logo" /></a>        
+        <a className="menu" onClick={() => handleLinkClick("actividadesYservicios")}>Actividades & Servicios</a>
+        <a className="menu" onClick={() => handleLinkClick("contacto")}>Contacto</a>
       </nav>
     </>
   );
 };
 
-export default header;
+export default Header;
