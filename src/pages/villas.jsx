@@ -4,8 +4,12 @@ const villas = () => {
     return(
         <>
             <Header />
-
-        
+            <div className="villas">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </>
     )
 }

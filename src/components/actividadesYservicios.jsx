@@ -8,20 +8,20 @@ import quetzal from '../assets/quetzal.jpg';
 const ActividadesYServicios = () => {
     const [tarjetaAbierta, setTarjetaAbierta] = useState(null);
 
-    const handleClick = (index) => {
+    const clickVerTarjeta = (index) => {
         setTarjetaAbierta(tarjetaAbierta === index ? null : index);
     };
 
     /// eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
-        const handleClickOutside = (event) => {
+        const ClickAfuera = (event) => {
             if (!event.target.closest(".tarjetas-expandibles")) {
                 setTarjetaAbierta(null);
             }
         };
-        document.addEventListener("click", handleClickOutside);
+        document.addEventListener("click", ClickAfuera);
         return () => {
-            document.removeEventListener("click", handleClickOutside);
+            document.removeEventListener("click", ClickAfuera);
         };
     },[]);
 
@@ -62,11 +62,7 @@ const ActividadesYServicios = () => {
             <h2 className='titulo-actividades'>Actividades & Servicios</h2>
             <div className="tarjetas-expandibles">
                 {slides.map((slide, index) => (
-                    <div 
-                        key={index} 
-                        className={`tarjeta-expandible ${tarjetaAbierta === index ? "active" : ""}`}
-                        onClick={() => handleClick(index)}
-                    >
+                    <div key={index} className={`tarjeta-expandible ${tarjetaAbierta === index ? "active" : ""}`} onClick={() => clickVerTarjeta(index)}>
                         <img src={slide.imagen} alt={slide.titulo} />
                         <div className="caja-texto">
                             <h3>{slide.titulo}</h3>

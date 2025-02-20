@@ -118,3 +118,29 @@
     background: #07272d;
     color: #fffffe;
 }
+
+@media (max-width: 895px) {
+
+    .copyright {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .politicas {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 424px) {
+
+    .redesYformulario {
+        flex-direction: column;
+    }
+
+    .formulario-contacto {
+        padding-top: 50px;
+        width: 80%;
+        margin: 0 auto;
+    }
+}

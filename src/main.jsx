@@ -9,6 +9,7 @@ import './estilos/habitacionesYsuites.css';
 import './estilos/actividadesYservicios.css';
 import './estilos/contacto.css';
 import './estilos/formulario.css';
+import './estilos/villas.css';
 import Header from './components/header.jsx';
 import Hero from './components/hero.jsx';
 import Resort from './components/resort.jsx';
