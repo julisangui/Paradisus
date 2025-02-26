@@ -2,5 +2,98 @@
     background-image: url('../assets/fondo-villas.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    padding: 150px 0 50px 0;
+}
+
+.tarjeta-villa {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 80%;
+    gap: 50px;
+    background-color: #fffffe;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.informacion-villa {
+    height: 100%;
+    width: 100%;
+}
+
+.tarjeta-villa h3 {
+    font-family: 'Dancing Script';
+    font-size: 35px;
+}
+
+.tarjeta-villa hr {
+    border-top: 1px solid #000001;
+    width: 100%;
+}
+
+.carousel.slide {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 15%;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+.boton-reservar {
+    color: #000001;
+    background: none;
+    height: 50px;
+    width: 100px;
+    border: 1px solid #000001;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.boton-reservar:hover {
+    background: #07272d;
+    color: #fffffe;
+}
+
+@media (max-width: 768px) {
+    .tarjeta-villa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel.slide {
+        width: 100%;
+        order: -1;
+    }
+
+    .informacion-villa {
+        order: 1;
+    }
 }

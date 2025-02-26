@@ -5,7 +5,7 @@ import './estilos/estilo.css';
 import './estilos/header.css';
 import './estilos/hero.css';
 import './estilos/resort.css';
-import './estilos/habitacionesYsuites.css';
+import './estilos/habitacionesYvillas.css';
 import './estilos/actividadesYservicios.css';
 import './estilos/contacto.css';
 import './estilos/formulario.css';

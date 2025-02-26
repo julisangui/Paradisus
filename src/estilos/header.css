@@ -91,7 +91,6 @@
     align-items: start;
     justify-content: center;
     padding: 2rem;
-    gap: 1.5rem;
     opacity: 1;
     transform: translateX(100%);
     transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.5s ease;
@@ -107,6 +106,7 @@
     
   .menu {
     font-size: 20px;
+    padding: 15px;
     color: #fffffe;
   }
 }
