@@ -74,7 +74,7 @@
     color: #000001;
     background: #fffffe;
     height: 50px;
-    width: 35%;
+    width: 100px;
     border: none;
     border-radius: 10px;
     font-size: 15px;
@@ -94,8 +94,7 @@
 @media (max-width: 768px) {
     
     .formulario {
-        width: 80%;
-        max-width: 100%;
+        width: 100%;
     }
 
     .fila {

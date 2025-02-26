@@ -5,7 +5,7 @@
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 50px;
     align-items: center;
     padding: 150px 0 50px 0;
 }
