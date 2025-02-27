@@ -57,7 +57,10 @@ const Formulario = () => {
                         <select name="tipo" value={formData.tipo} onChange={handleChange} required>
                             <option hidden value=""></option>
                             <option value="habitacion">Habitación</option>
-                            <option value="villa">Villa</option>
+                            <option value="villa">Villa Tortuga</option>
+                            <option value="villa">Villa Delfin</option>
+                            <option value="villa">Villa Flamengo</option>
+                            <option value="villa">Villa Perla</option>
                         </select>
                     </div>
                     <div className="fila">
@@ -72,22 +75,22 @@ const Formulario = () => {
                     </div>
                     <div className="fila">
                         <div>
-                            <label>Numero de la tarjeta</label>
-                            <input type="number" name="numeroTarjeta" value={formData.numeroTarjeta} onChange={handleChange} required />
+                            <label>Titular de la tarjeta</label>
+                            <input type="text" name="titularTarjeta" value={formData.titularTarjeta} onChange={handleChange} required />
                         </div>
                         <div>
-                            <label>Fecha de expiración</label>
-                            <input type="text" name="fechaExpiracion" value={formData.fechaExpiracion} onChange={handleChange} placeholder="mm/aa" required />
+                            <label>Numero de la tarjeta</label>
+                            <input type="number" name="numeroTarjeta" value={formData.numeroTarjeta} onChange={handleChange} required />
                         </div>
                     </div>
                     <div className="fila">
                         <div>
-                            <label>CVC/CVV</label>
-                            <input type="number" name="codigoVerificacion" value={formData.codigoVerificacion} onChange={handleChange} required />
+                            <label>Fecha de expiración</label>
+                            <input type="text" name="fechaExpiracion" value={formData.fechaExpiracion} onChange={handleChange} placeholder="mm/aa" required />
                         </div>
                         <div>
-                            <label>Titular de la tarjeta</label>
-                            <input type="text" name="titularTarjeta" value={formData.titularTarjeta} onChange={handleChange} required />
+                            <label>CVC/CVV</label>
+                            <input type="number" name="codigoVerificacion" value={formData.codigoVerificacion} onChange={handleChange} required />
                         </div>
                     </div>
                     <button type="submit">Reservar</button>

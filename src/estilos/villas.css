@@ -56,7 +56,6 @@
     width: 60%;
     display: flex;
     justify-content: center;
-    border-radius: 5px;
 }
 
 .carousel-inner img {
