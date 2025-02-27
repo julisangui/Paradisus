@@ -50,10 +50,6 @@
     transition: all 0.3s ease;
 }
 
-.formulario input::placeholder {
-    color: #000001;
-}
-
 .formulario-select {
     display: flex;
     flex-direction: column;

@@ -80,7 +80,7 @@ const Formulario = () => {
                         </div>
                         <div>
                             <label>Numero de la tarjeta</label>
-                            <input type="number" name="numeroTarjeta" value={formData.numeroTarjeta} onChange={handleChange} required />
+                            <input type="number" name="numeroTarjeta" value={formData.numeroTarjeta} onChange={handleChange} placeholder="Ingrese un numero cualquiera" required />
                         </div>
                     </div>
                     <div className="fila">
@@ -90,7 +90,7 @@ const Formulario = () => {
                         </div>
                         <div>
                             <label>CVC/CVV</label>
-                            <input type="number" name="codigoVerificacion" value={formData.codigoVerificacion} onChange={handleChange} required />
+                            <input type="number" name="codigoVerificacion" value={formData.codigoVerificacion} onChange={handleChange} placeholder="Ingrese un numero cualquiera" required />
                         </div>
                     </div>
                     <button type="submit">Reservar</button>
