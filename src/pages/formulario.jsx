@@ -39,7 +39,7 @@ const Formulario = () => {
                         </div>
                         <div>
                             <label>Cantidad de personas</label>
-                            <input type="number" name="ocupacion" value={formData.cantidadPersonas} onChange={handleChange} required />
+                            <input type="number" name="cantidadPersonas" value={formData.cantidadPersonas} onChange={handleChange} required />
                         </div>
                     </div>
                     <div className="fila">
