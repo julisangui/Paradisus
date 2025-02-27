@@ -97,6 +97,10 @@
         width: 100%;
     }
 
+    .formulario form {
+        width: 80%;
+    }
+
     .fila {
         flex-direction: column;
         gap: 10px;

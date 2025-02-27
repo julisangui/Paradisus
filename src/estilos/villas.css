@@ -13,7 +13,6 @@
 .tarjeta-villa {
     display: flex;
     justify-content: space-between;
-    height: auto;
     width: 80%;
     gap: 50px;
     background-color: #fffffe;
@@ -22,30 +21,47 @@
 }
 
 .informacion-villa {
-    height: 100%;
     width: 100%;
 }
 
-.tarjeta-villa h3 {
+.informacion-villa h3 {
     font-family: 'Dancing Script';
     font-size: 35px;
 }
 
-.tarjeta-villa hr {
+.informacion-villa hr {
     border-top: 1px solid #000001;
     width: 100%;
+}
+
+.informacion-villa ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    gap: 50px;
+}
+
+.informacion-villa ul div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.informacion-villa li {
+    font-size: 12px;
+    font-family: 'Inter';
 }
 
 .carousel.slide {
     width: 60%;
     display: flex;
     justify-content: center;
-    margin-top: auto;
+    border-radius: 5px;
 }
 
 .carousel-inner img {
     width: 100%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -72,9 +88,7 @@
     font-size: 15px;
     cursor: pointer;
     transition: 0.5s;
-    margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 10px;
 }
 
 .boton-reservar:hover {

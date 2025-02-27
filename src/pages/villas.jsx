@@ -19,8 +19,21 @@ const villas = () => {
                         <h3>Villa Tortuga</h3>
                         <hr />
                         <ul>
-                            <li>Baño</li>
-                        </ul>                        
+                            <div>
+                                <li>Living</li>
+                                <li>Cocina con chef privado</li>
+                                <li>Dormitorios cómodos</li>
+                                <li>Baño con jacuzzi</li>
+                                <li>Sala de Gym privado</li>
+                            </div>
+                            <div>
+                                <li>Wifi de alta velocidad</li>
+                                <li>Servicio de limpieza diaria</li>
+                                <li>Aire acondicionado y caja fuerte</li>
+                                <li>Terraza con piscina privada</li>
+                                <li>Acceso a la playa</li>
+                            </div>
+                        </ul>
                         <button className="boton-reservar" onClick={() => navigate("/formulario")}>reservar</button>
                     </div>
                     <div id="carouselVillaTortuga" className="carousel slide" data-bs-ride="carousel">
@@ -53,7 +66,20 @@ const villas = () => {
                         <h3>Villa Delfin</h3>
                         <hr />
                         <ul>
-                            <li>Baño</li>
+                            <div>
+                                <li>Living</li>
+                                <li>Cocina con chef privado</li>
+                                <li>Dormitorios cómodos</li>
+                                <li>Baño con jacuzzi</li>
+                                <li>Sala de Gym privado</li>
+                            </div>
+                            <div>
+                                <li>Wifi de alta velocidad</li>
+                                <li>Servicio de limpieza diaria</li>
+                                <li>Aire acondicionado y Caja fuerte</li>
+                                <li>Terraza con piscina privada</li>
+                                <li>Acceso a la playa</li>
+                            </div>
                         </ul>
                         <button className="boton-reservar" onClick={() => navigate("/formulario")}>reservar</button>
                     </div>
@@ -87,7 +113,20 @@ const villas = () => {
                         <h3>Villa Flamengo</h3>
                         <hr />
                         <ul>
-                            <li>Baño</li>
+                            <div>
+                                <li>Living</li>
+                                <li>Cocina con chef privado</li>
+                                <li>Dormitorios cómodos</li>
+                                <li>Baño con jacuzzi</li>
+                                <li>Sala de Gym privado</li>
+                            </div>
+                            <div>
+                                <li>Wifi de alta velocidad</li>
+                                <li>Servicio de limpieza diaria</li>
+                                <li>Aire acondicionado y Caja fuerte</li>
+                                <li>Terraza con piscina privada</li>
+                                <li>Acceso a la playa</li>
+                            </div>
                         </ul>
                         <button className="boton-reservar" onClick={() => navigate("/formulario")}>reservar</button>
                     </div>
@@ -121,7 +160,20 @@ const villas = () => {
                         <h3>Villa Perla</h3>
                         <hr />
                         <ul>
-                            <li>Baño</li>
+                            <div>
+                                <li>Living</li>
+                                <li>Cocina con chef privado</li>
+                                <li>Dormitorios cómodos</li>
+                                <li>Baño con jacuzzi</li>
+                                <li>Sala de Gym privado</li>
+                            </div>
+                            <div>
+                                <li>Wifi de alta velocidad</li>
+                                <li>Servicio de limpieza diaria</li>
+                                <li>Aire acondicionado y Caja fuerte</li>
+                                <li>Terraza con piscina privada</li>
+                                <li>Acceso a la playa</li>
+                            </div>
                         </ul>
                         <button className="boton-reservar" onClick={() => navigate("/formulario")}>reservar</button>
                     </div>
