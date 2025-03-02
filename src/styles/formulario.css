@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .formulario form {
@@ -17,7 +18,7 @@
     gap: 20px;
     padding: 25px;
     margin-top: 150px;
-    margin-bottom: 50px;
+    margin-bottom: 50px
 }
 
 .fila {
@@ -77,9 +78,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: 0.5s;
-    margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 25px auto;
 }
 
 .formulario button:hover {
@@ -87,18 +86,41 @@
     color: #fffffe;
 }
 
+#mensaje {
+    color: rgb(15, 211, 15);
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: "bold";
+    padding: 50px;
+    border: 1px solid #000001;
+    background-color: rgb(240, 248, 255, 0.9);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.bi.bi-check-circle-fill {
+    font-size: 50px;
+}
+
 @media (max-width: 768px) {
     
     .formulario {
         width: 100%;
+        padding: 10px;
     }
 
     .formulario form {
-        width: 80%;
+        width: 90%;
     }
 
     .fila {
         flex-direction: column;
         gap: 10px;
+    }
+
+    #mensaje {
+        max-width: 90%;
+        font-size: 20px;
+        padding: 20px;
     }
 }
