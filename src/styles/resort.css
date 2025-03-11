@@ -1,10 +1,10 @@
-.presentacion-resort{
+.presentacion-resort {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.titulo-resort{
+.titulo-resort {
     color: #07272d;
     font-family: 'Old Standart TT';
     font-size: 30px;
@@ -12,7 +12,7 @@
     padding: 60px 0 25px 0;
 }
 
-.descripcion-resort{
+.descripcion-resort {
     font-family: 'Inter';
     font-size: 12px;
     color: #07272d;
