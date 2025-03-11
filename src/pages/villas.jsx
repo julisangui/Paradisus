@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 const Villas = () => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const navigate = useNavigate();
 
   //Por error de la pagina, siempre se carga en la parte inferior, y este useEffect forza la pagina a cargarse en la parte superior
