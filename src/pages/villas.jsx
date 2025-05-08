@@ -199,7 +199,7 @@ const Villas = () => {
         </div>
         <div className="tarjeta-villa">
           <div className="informacion-villa">
-            <h3>Villa Flamengo</h3>
+            <h3>Villa Flamenco</h3>
             <hr />
             <ul>
               <div>
@@ -225,26 +225,26 @@ const Villas = () => {
             </button>
           </div>
           <div
-            id="carouselVillaFlamengo"
+            id="carouselVillaFlamenco"
             className="carousel slide"
             data-bs-ride="carousel"
           >
             <div className="carousel-indicators">
               <button
                 type="button"
-                data-bs-target="#carouselVillaFlamengo"
+                data-bs-target="#carouselVillaFlamenco"
                 data-bs-slide-to="0"
                 className="active"
                 aria-current="true"
               ></button>
               <button
                 type="button"
-                data-bs-target="#carouselVillaFlamengo"
+                data-bs-target="#carouselVillaFlamenco"
                 data-bs-slide-to="1"
               ></button>
               <button
                 type="button"
-                data-bs-target="#carouselVillaFlamengo"
+                data-bs-target="#carouselVillaFlamenco"
                 data-bs-slide-to="2"
               ></button>
             </div>
@@ -266,7 +266,7 @@ const Villas = () => {
             <button
               className="carousel-control-prev"
               type="button"
-              data-bs-target="#carouselVillaFlamengo"
+              data-bs-target="#carouselVillaFlamenco"
               data-bs-slide="prev"
             >
               <span
@@ -277,7 +277,7 @@ const Villas = () => {
             <button
               className="carousel-control-next"
               type="button"
-              data-bs-target="#carouselVillaFlamengo"
+              data-bs-target="#carouselVillaFlamenco"
               data-bs-slide="next"
             >
               <span
