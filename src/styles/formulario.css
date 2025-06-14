@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    height: auto;
 }
 
 .formulario form {
@@ -14,7 +15,6 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
     padding: 25px;
     margin-top: 150px;
@@ -84,22 +84,6 @@
 .formulario button:hover {
     background: #07272d;
     color: #fffffe;
-}
-
-#mensaje {
-    color: rgb(15, 211, 15);
-    font-family: 'Inter';
-    font-size: 25px;
-    font-weight: "bold";
-    padding: 50px;
-    border: 1px solid #000001;
-    background-color: rgb(240, 248, 255, 0.9);
-    border-radius: 20px;
-    text-align: center;
-}
-
-.bi.bi-check-circle-fill {
-    font-size: 50px;
 }
 
 @media (max-width: 768px) {

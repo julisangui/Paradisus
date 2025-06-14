@@ -1,17 +1,26 @@
 .redesYformulario {
     display: flex;
     justify-content: space-evenly;
+    background-color: rgb(254, 254, 254);
 }
 
-.formulario-contacto {
+.columna-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.form-consulta {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 30%;
+    width: 70%;
     margin-top: 40px;
 }
 
-.formulario-contacto input {
+.form-consulta input {
     font-size: 12px;
     border: none;
     border-bottom: 1px solid darkgray;
@@ -19,11 +28,11 @@
     outline: none;
 }
 
-.formulario-contacto input:focus {
+.form-consulta input:focus {
     background: none;
 }
 
-.formulario-contacto textarea {
+.form-consulta textarea {
     font-size: 12px;
     height: 200px;
     padding: 10px;
@@ -36,6 +45,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 40%;
 }
 
 .logo-contacto {
@@ -49,6 +59,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 15px;
+    margin-bottom: 25px;
 }
 
 .redes a {
@@ -99,7 +110,7 @@
     text-decoration: underline;
 }
 
-.formulario-contacto button {
+.form-consulta button {
     color: #000001;
     background: none;
     height: 50px;
@@ -114,9 +125,24 @@
     margin-bottom: 25px;
 }
 
-.formulario-contacto button:hover {
+.form-consulta button:hover {
     background: #07272d;
     color: #fffffe;
+}
+
+.mensaje {
+    color: greenyellow;
+    font-family: 'Inter';
+    font-size: 20px;
+    padding: 50px;
+    background-color: rgb(254, 254, 254);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.bi.bi-check-circle-fill {
+    color: greenyellow;
+    font-size: 50px;
 }
 
 @media (max-width: 895px) {
