@@ -25,7 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter basename="/Paradisus">
       <Routes>
         <Route
-          path="*"
+          path="/"
           element={
             <>
               <Header />
