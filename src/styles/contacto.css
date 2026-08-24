@@ -131,7 +131,7 @@
 }
 
 .mensaje {
-    color: greenyellow;
+    color: rgb(100, 200, 80);
     font-family: 'Inter';
     font-size: 20px;
     padding: 50px;
@@ -141,7 +141,7 @@
 }
 
 .bi.bi-check-circle-fill {
-    color: greenyellow;
+    color: rgb(100, 200, 80);
     font-size: 50px;
 }
 
